@@ -1,0 +1,12 @@
+.BasicButton {
+  color: white;
+  background-color: rgb(8, 123, 255);
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  transition: background-color 250ms ease-in-out;
+}
+.BasicButton:hover {
+  background-color: blue !important;
+}

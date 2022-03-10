@@ -1,0 +1,79 @@
+.modal {
+  padding: 25px 50px;
+  border: 2px dashed blue;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 21389;
+  transform: translate(-50%, -50%) !important;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translate(-50%, -10%);
+    transform: translate(-50%, -10%);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+
+    transform: translate(-50%, -50%);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translate(-50%, -10%);
+    transform: translate(-50%, -10%);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+
+    transform: translate(-50%, -50%);
+  }
+}
+
+.modal input {
+  border: none;
+  outline: none;
+  border: 2px dashed blue;
+  border-radius: 10px;
+}
+.close {
+  background-color: rgb(255, 0, 64);
+  border: 2px solid white;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: background-color ease-in-out 250ms;
+}
+.close:hover {
+  background-color: rgb(255, 0, 119);
+}
+.modal textarea {
+  border: none;
+  outline: none;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid blue;
+  border: 2px dashed blue;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+.modal textarea:focus {
+  background-color: aliceblue;
+}
+.modal * {
+  font-family: "Poppins";
+  font-size: larger;
+  font-weight: bolder;
+}
+.StaCon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: gray;
+  width: 90%;
+}
